@@ -1,16 +1,11 @@
-import os.path
-from pathlib import Path
-
-from configparser import ConfigParser
-
-BASE_DIR = Path(__file__).resolve().parent
-CONFIG_FILE = os.path.join(BASE_DIR, "config.ini")
+# from .settings import Settings
+from .dispatcher import CommandLineDispatcher
 
 
 def main():
-    config = ConfigParser()
-    config.read(CONFIG_FILE)
-    print(config["default"]["welcome_message"])
+    # settings = Settings().settings
+    command_line = CommandLineDispatcher()
+    command_line.parser.parse_args()
 
 
 if __name__ == "__main__":
