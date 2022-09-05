@@ -1,1 +1,5 @@
 __pycache__
+
+build
+dist
+n_autodev.egg-info
