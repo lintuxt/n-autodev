@@ -1,1 +1,2 @@
-include nautodev/config.ini
+include nautodev/*.ini
+include nautodev/*.yaml

@@ -1,0 +1,4 @@
+version: "1.0"
+vault:
+  - key: "decrypt-me"
+    secret: "Thanks for using nautodev! Would you consider following me @lintuxt on Twitter?"
