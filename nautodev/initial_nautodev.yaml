@@ -1,0 +1,7 @@
+version: "1.0"
+vault:
+  keys:
+    - "decrypt-me"
+commands:
+  - echo: "echo Hello from nautodev.yaml"
+  - decrypt-me-echo: "echo $DECRYPT_ME"

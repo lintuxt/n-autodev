@@ -20,7 +20,7 @@ setup(
     license="MIT",
     packages=["nautodev"],
     include_package_data=True,
-    install_requires=[],
+    install_requires=["cryptography"],
     entry_points={
         "console_scripts": [
             "nautodev=nautodev.__main__:main",

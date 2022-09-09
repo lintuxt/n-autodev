@@ -126,14 +126,16 @@ class Vault:
                 return secret["secret"]
         return None
 
-    def vault_show_secret(self, key):
+    def vault_show_secret(self, args):
+        key = args[0]
         secret = self.vault_get_secret(key)
         if secret:
             print(secret)
         else:
             print("[!] Secret not found.")
 
-    def vault_delete_secret(self, key):
+    def vault_delete_secret(self, args):
+        key = args[0]
         self._load_vault()
         yaml_vault_dict = yaml.safe_load(self._vault)
         for secret in yaml_vault_dict["vault"]:
